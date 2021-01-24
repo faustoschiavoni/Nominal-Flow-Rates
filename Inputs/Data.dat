@@ -1,0 +1,29 @@
+param: Giorni := 365;                 #numero giorni da input e per indici
+param: DMV := 0.50;                   #deflusso minimo vitale
+param: Numero_TipiTurbine:= 2;        #tipi turbine
+param: Eta_aux := 0.88464;            #rendimento tot comprendente ausiliari e disponibilità dell'impianto
+param: Revenues_Specific := 81.43;    #ricavi [€/MWh]
+param: Perc_OeM := 0.02;              #percentuale di costo di investimento che si spende in O&M
+param: Inv_Cost := 3370000;           #Costo di Investimento Iniziale I0 di opere civili
+param: Ammortization := 20;           #anni di ammortamento
+param: Taxes := 0.28;                 #percentuale tasse (irap + ires)
+param: Discount_Rate := 0.04;         #tasso di attualizzazione
+param: Lifetime := 30;                #anni di funzionamento
+param: Coeff := 0.002326;             #Coefficiente che raccoglie tutte le perdite concentrate e distribuite (che moltiplica la Portata totale)
+
+param: Nmax := 10;                    #Numero massimo di turbine per ogni tipo
+param: Portata_Nom :=                 #Portata Nominale turbinata da per ogni tipo di turbina [
+1    2.0
+2    2.0;
+param: Portata_Min :=                 #Portata minima per tipo di turbina
+1   0.38
+2   0.38;
+param: Portata_Max :=                 #Portate massime 'turbinabili' per ogni tipologia di turbina
+1   2.06
+2   2.1;
+param: Etas :=                         #rendimenti nominali turbina
+1   0.9
+2   0.9;
+param: Cost_turb:=                    #Costo specifico della turbina [€]
+1   258788
+2   151818;
